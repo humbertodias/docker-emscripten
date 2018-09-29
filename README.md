@@ -1,21 +1,26 @@
 # Docker Emscripten
 
-# Play
+# C > JavaScript
 
 ```
-EMCC_CMD="emcc hello.c -s WASM=1 -o hello.html"
-docker run --rm -v $(pwd)/src:/src trzeci/emscripten $(echo $EMCC_CMD)
+make build_01
+```
+
+# C++ > C > JavaScript
+
+```
+make build_02
 ```
 
 # Server
 
 ```
-emrun --no_browser --port 8000 .
+emrun --port 8000 .
 ```
 
 Open
 
-http://localhost:8000/src/hello.html
+http://localhost:8000/01_c_helloworld/main.html
 
 # Output
 
