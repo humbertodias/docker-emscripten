@@ -3,6 +3,7 @@
 # PreRequirements
 
 * Make
+* Docker
 
 
 # C > JavaScript
@@ -16,19 +17,11 @@ make build_01
 ```
 make build_02
 ```
-# C + SDL > JavaScript
+# C + SDL2 > JavaScript
 
 ```
 make build_03
 ```
-
-
-# C + SDL2 > JavaScript
-
-```
-make build_04
-```
-
 
 # Server
 
